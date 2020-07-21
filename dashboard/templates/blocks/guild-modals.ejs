@@ -1,0 +1,45 @@
+  <!-- Manage Page Modals -->
+  <div class="modal fade" id="serverLeaveModal" tabindex="-1" role="dialog" aria-labelledby="serverLeaveModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="serverLeaveModalLabel">Wyjść z serwera ?/h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Czy jesteś pewien, że
+            chcesz wyjść z serwera <%= bot.user.username %> ?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Anuluj</button>
+          <a class="btn btn-outline-danger" href="/dashboard/<%= guild.id %>/leave" role="button">Wyjdź</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Manage Page Modals -->
+  <div class="modal fade" id="settingsResetModal" tabindex="-1" role="dialog" aria-labelledby="settingsResetModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="settingsResetModalLabel">Zresetować ustawienia ?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Czy jesteś pewien, że chcesz przywrócić ustawienia domyślne ?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Anuluj</button>
+          <a class="btn btn-outline-danger" href="/dashboard/<%= guild.id %>/reset" role="button">Zresetuj</a>
+        </div>
+      </div>
+    </div>
+  </div>
