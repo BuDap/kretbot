@@ -17,7 +17,7 @@ class GuideBot extends Client {
     super(options);
 
     // Here we load the config.js file that contains our token and our prefix values.
-    this.config = require("./config.js");
+    this.config = require("./konfig.js");
     // client.config.token contains the bot's token
     // client.config.prefix contains the message prefix
 
